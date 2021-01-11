@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(sentence) {
     let results = {};
     for ( const letter in sentence) {
-        console.log(letter);
+        // console.log(letter);
         const chy = sentence[letter];
         if(!results[chy]) {
             results[chy] = 0;
