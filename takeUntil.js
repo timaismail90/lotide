@@ -3,16 +3,25 @@
 // 1. create the callback = callback provided should return true
 
 const takeUntil = function(array, callback) {
-    array.map(function(item) {
-        
-    })
+    let newArr = [];
+    for(i = 0; i< array.length; i++) {
+        // console.log(array[i]);
+        if(callback(array[i])) {
+            break;
+        }
+
+        newArr.push(array[i]);
+
+    }
+    return  newArr;
+
 
 
     // ...
   }
+  // let result = numbers.every( e  => e > 0);
 
 
-
-  const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-  const results1 = takeUntil(data1, x => x < 0);
-  console.log(results1);  
+  const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+  const results2 = takeUntil(data2, x => x === ',');
+  console.log(results2);
