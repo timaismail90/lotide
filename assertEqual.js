@@ -13,3 +13,6 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("School", "University");
 assertEqual(5, 5);
+
+
+module.exports = assertEqual;
